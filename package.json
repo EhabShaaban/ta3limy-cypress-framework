@@ -1,0 +1,22 @@
+{
+  "name": "ta3limy-script",
+  "version": "1.0.0",
+  "description": "Script to test against ta3limy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/EhabShaaban/ta3limy-script.git"
+  },
+  "author": "ehab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/EhabShaaban/ta3limy-script/issues"
+  },
+  "homepage": "https://gitlab.com/EhabShaaban/ta3limy-script#readme",
+  "dependencies": {
+    "cypress": "^5.5.0"
+  }
+}
