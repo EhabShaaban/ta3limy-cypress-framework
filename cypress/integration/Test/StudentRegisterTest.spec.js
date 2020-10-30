@@ -14,15 +14,17 @@ describe('Register as Student Suite', function() {
         rp.clickOnStudentBtn()
         rp.fillInFirstNameTextBox('Ehab')
         rp.fillInLastNameTextBox('Shaaban')
-        rp.fillInMobileNumberTextBox('01100403456')
+        rp.fillInMobileNumberTextBox('01255566325')
         cy.scrollTo(0, 500)
         /*
         ذكر
         أنثى
         */
         rp.clickOnGenderBtn('ذكر')
-        rp.selectLevelDropDownList(10)
+        rp.selectLevelDropDownList(5)
         rp.fillInPasswordTextBox('ehabshaaban100123')
         rp.fillInPasswordConfirmationTextBox('ehabshaaban100123')
+        rp.clickOnAgree()
+        rp.clickOnSubmitBtn()
     })
 })
