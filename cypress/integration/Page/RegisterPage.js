@@ -69,7 +69,7 @@ class RegisterPage
     }
     //
 
-    selectLevelDropDownList(value)
+    selectLevelDropDownList()
     {
         /*
         console.log(value)

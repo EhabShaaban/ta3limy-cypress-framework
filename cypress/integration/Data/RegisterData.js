@@ -1,0 +1,1 @@
+cy.readFile("/home/ehab/ta3limy_script/data.json")
