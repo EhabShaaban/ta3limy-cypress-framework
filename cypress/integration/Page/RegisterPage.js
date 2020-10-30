@@ -136,12 +136,14 @@ class RegisterPage
         .invoke('attr', 'value', 'true')
         .should('have.attr', 'value', 'true')
         */
-       cy.get('input[id="termsAndConditionsCheck"]').click({force: true});
+       cy.get('input[id="termsAndConditionsCheck"]').click({force: true})
+       return this
     }
 
     clickOnSubmitBtn()
     {
         cy.get('button[type="submit"]').click({force: true})
+        return this
     }
 
 }
