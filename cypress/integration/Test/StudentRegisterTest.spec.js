@@ -3,29 +3,24 @@
 import RegisterPage from '../Page/RegisterPage'
 
 describe('Register as Student Suite', function() {
-
+    beforeEach(function(){
+        cy.fixture('data').as('student')
+    })
     it('Valid Student Register Test', function(){
         const rp = new RegisterPage()
         rp.visit()
         rp.clickOnNewRegistrationBtn()
         cy.title().should('be.equal', 'منـصــة تعليمى')
-
         rp.clickOnStudentBtn()
-        cy.fixture('data').then((student)=>{
-            rp.fillInFirstNameTextBox(student.firstname)
-            rp.fillInLastNameTextBox(student.lastname)
-            rp.fillInMobileNumberTextBox(student.mobilenumber)
-        })
+        rp.fillInFirstNameTextBox(this.student.firstname)
+        rp.fillInLastNameTextBox(this.student.lastname)
+        rp.fillInMobileNumberTextBox(this.student.mobilenumber)
         cy.scrollTo(0, 500)
         /*أنثى ; ذكر*/
-       cy.fixture('data').then((student)=>{
-        rp.clickOnGenderBtn(student.gender)
-        })
+        rp.clickOnGenderBtn(this.student.gender)
         rp.selectLevelDropDownList()
-        cy.fixture('data').then((student)=>{
-            rp.fillInPasswordTextBox(student.password)
-            rp.fillInPasswordConfirmationTextBox(student.confirmpassword)
-            })
+        rp.fillInPasswordTextBox(this.student.password)
+        rp.fillInPasswordConfirmationTextBox(this.student.confirmpassword)
         rp.clickOnAgree()
         rp.clickOnSubmitBtn()
     })
