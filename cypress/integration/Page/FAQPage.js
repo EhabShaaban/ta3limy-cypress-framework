@@ -7,7 +7,6 @@ class FAQPage
         cy.visit("https://www.ta3limy.com/faq");
         return this
     }
-
     getQuestionTitles()
     {
         cy.fixture('question_titles').then((questions) => {
@@ -15,7 +14,6 @@ class FAQPage
           })
         return this
     }
-    
     getQuestionContents()
     {
         /*
@@ -24,15 +22,10 @@ class FAQPage
             cy.writeFile('/home/ehab/ta3limy_script/cypress/fixtures/question_contents.json', {contents:content})
        })
        */
-       
-
        cy.fixture('question_contents').then((questions) => {
         cy.get('div[class="Collapsible__contentInner"]').should('have.text', questions.contents)
       })
-
         return this
     }
-
 }
-
 export default FAQPage
