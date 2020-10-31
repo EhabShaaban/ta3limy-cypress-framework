@@ -16,5 +16,5 @@
 > (Check) *No remarks*
 + Clicking on a video should redirect to the corresponding page
 > (Check) *No remarks*
-+ Go back to continue with the next locked exercise
++ Go back to continue with the next locked exercises
 > (Not check) All locked exercises will be unlocked ``Not Valid``
