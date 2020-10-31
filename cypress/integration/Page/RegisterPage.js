@@ -45,7 +45,7 @@ class RegisterPage
     }
     selectLevelDropDownList()
     {
-        cy.get('select[id="grade"]').select('10', {force: true})
+        cy.get('select[id="grade"]').select('11', {force: true})
         return this
     }
     fillInPasswordTextBox(value)
@@ -62,7 +62,7 @@ class RegisterPage
         passwordConfirmationTextBox.type(value)
         return this
     }
-    clickOnAgree()
+    clickOnAgreeCheckBox()
     {
        cy.get('input[id="termsAndConditionsCheck"]').click({force: true})
        return this

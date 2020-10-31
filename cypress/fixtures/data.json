@@ -2,16 +2,16 @@
 
 	"student": [
 	{
-	"firstname": "ehab",
-	"lastname": "shaaban",
+	"firstname": "mr",
+	"lastname": "anderson",
 	"mobilenumber": "01255566325",
 	"gender": "ذكر",
 	"password": "ehabshaaban100123",
 	"confirmpassword": "ehabshaaban100123"
 	},
 	{
-	"firstname": "ehab",
-	"lastname": "shaaban",
+	"firstname": "james",
+	"lastname": "bond",
 	"mobilenumber": "plain text",
 	"gender": "أنثى",
 	"password": "ehabshaaban100123",
