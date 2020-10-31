@@ -9,7 +9,7 @@ This test suite and test script are designed to test against FAQ page & New Stud
 
 #### Setup
 
-> Start by installing cypress in you already don't have it https://www.cypress.io/
+> Start by installing cypress if you already don't have it https://www.cypress.io/
 
 + Run the following commands for *mochawesome* compatibility:
 + ``npm install mocha --save-dev``
@@ -20,8 +20,9 @@ This test suite and test script are designed to test against FAQ page & New Stud
 
 #### How to run
 
-+ Open your terminal and type ``npx cypress open --browser=chrome`` to run tests on chrome
->> If npx not installed on your system run ``npm install -g npx`` to install npx globally
++ Open your terminal and cd in project
++ Type ``npx cypress open --browser=chrome`` to run tests on chrome
+> If npx not installed on your system run ``npm install -g npx`` to install npx globally
 + Run ``npm run test`` to generate mochawesome reports under *../cypress/reports/mochareports/report.html* and for test videos go to *../cypress/videos/Test*
 
 #### Tech Stack
