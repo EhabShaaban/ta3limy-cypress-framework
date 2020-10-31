@@ -8,4 +8,4 @@
 + Exercise page should be displaying a video on the left
 + A list with chained videos to the same exercise should be on the right
 + Clicking on a video should redirect to the corresponding page
-+ Go back to continue with the next locked exercise
++ Go back to continue with the next locked exercises
