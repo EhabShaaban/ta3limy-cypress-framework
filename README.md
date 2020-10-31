@@ -21,6 +21,7 @@ This test suite and test script are designed to test against FAQ page & New Stud
 #### How to run
 
 + Open your terminal and type ``npx cypress open --browser=chrome`` to run tests on chrome
+>> If npx not installed on your system run ``npm install -g npx`` to install npx globally
 + Run ``npm run test`` to generate mochawesome reports under *../cypress/reports/mochareports/report.html* and for test videos go to *../cypress/videos/Test*
 
 #### Tech Stack
