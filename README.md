@@ -12,9 +12,9 @@ This test suite and test script are designed to test against FAQ page & New Stud
 > Start by installing cypress in you already don't have it https://www.cypress.io/
 
 + Run the following commands for *mochawesome* compatibility:
-``npm install mocha --save-dev``
-``npm install cypress-multi-reporters --save-dev``
-``npm install mochawesome --save-dev``
-``npm install mochawesome-merge --save-dev``
-``npm install mochawesome-report-generator --save-dev``
++ ``npm install mocha --save-dev``
++ ``npm install cypress-multi-reporters --save-dev``
++ ``npm install mochawesome --save-dev``
++ ``npm install mochawesome-merge --save-dev``
++ ``npm install mochawesome-report-generator --save-dev``
 
