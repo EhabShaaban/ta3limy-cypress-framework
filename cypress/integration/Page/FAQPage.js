@@ -6,7 +6,22 @@ class FAQPage
     */
     visit()
     {
-        cy.visit("https://www.ta3limy.com/faq");
+        cy.visit(Cypress.config().baseUrl);
+        return this
+    }
+    /**
+     * Click on faq icon
+     */
+    clickOnFaqIcon(){
+        const faqIcon = cy.get('#help-menu')
+        faqIcon.click()
+        return this
+    }
+    /**
+     * Click on faq
+     */
+    clickOnFaq(){
+        cy.get('a').contains('أسئلة شائعة').click()
         return this
     }
     /**

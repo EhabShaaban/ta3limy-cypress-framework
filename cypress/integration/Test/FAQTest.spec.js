@@ -9,6 +9,8 @@ describe('FAQ Suite', function() {
         const faq = new FAQPage()
         // Calling needed test methods
         faq.visit()
+        faq.clickOnFaqIcon()
+        faq.clickOnFaq()
         faq.getQuestionTitles()
         faq.getQuestionContents()
     })

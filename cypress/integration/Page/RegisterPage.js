@@ -7,7 +7,8 @@ class RegisterPage
     */
     visit()
     {
-        cy.visit("https://www.ta3limy.com/");
+        cy.visit(Cypress.config().baseUrl);
+        return this
     }
     /**
      * Fetch & click on new register
