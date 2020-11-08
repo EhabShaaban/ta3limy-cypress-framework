@@ -7,6 +7,7 @@ describe('Register as Student Suite', function() {
     // JSON file under ../ta3limy_script/cypress/fixtures
     beforeEach(function(){
         cy.fixture('data').as('student')
+        cy.fixture('register_page_title').as('registerTitle')
     })
     it('Valid Student Register Test', function(){
         /**
@@ -19,7 +20,7 @@ describe('Register as Student Suite', function() {
         rp.visit()
         rp.clickOnNewRegistrationBtn()
         // Asserting on registration page title
-        cy.title().should('be.equal', 'منـصــة تعليمى')
+        cy.title().should('be.equal', this.registerTitle.title)
         rp.clickOnStudentBtn()
         // Using first JSON element on "student" to run valid test
         rp.fillInFirstNameTextBox(this.student.student[0].firstname)
