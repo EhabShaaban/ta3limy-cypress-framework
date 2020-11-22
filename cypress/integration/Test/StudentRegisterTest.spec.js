@@ -6,8 +6,7 @@ describe('Register as Student Suite', function() {
     // Loading JSON before each test
     // JSON file under ../ta3limy_script/cypress/fixtures
     beforeEach(function(){
-        cy.fixture('data').as('student')
-        cy.fixture('register_page_title').as('registerTitle')
+        cy.fixture('data').as('d')
     })
     it('Valid Student Register Test', function(){
         /**
@@ -20,16 +19,16 @@ describe('Register as Student Suite', function() {
         rp.visit()
         rp.clickOnNewRegistrationBtn()
         // Asserting on registration page title
-        cy.title().should('be.equal', this.registerTitle.title)
+        cy.title().should('be.equal', this.d.title)
         rp.clickOnStudentBtn()
         // Using first JSON element on "student" to run valid test
-        rp.fillInFirstNameTextBox(this.student.student[0].firstname)
-        rp.fillInLastNameTextBox(this.student.student[0].lastname)
-        rp.fillInMobileNumberTextBox(this.student.student[0].mobilenumber)
-        rp.clickOnGenderBtn(this.student.student[0].gender)
+        rp.fillInFirstNameTextBox(this.d.student[0].firstname)
+        rp.fillInLastNameTextBox(this.d.student[0].lastname)
+        rp.fillInMobileNumberTextBox(this.d.student[0].mobilenumber)
+        rp.clickOnGenderBtn(this.d.student[0].gender)
         rp.selectLevelDropDownList()
-        rp.fillInPasswordTextBox(this.student.student[0].password)
-        rp.fillInPasswordConfirmationTextBox(this.student.student[0].confirmpassword)
+        rp.fillInPasswordTextBox(this.d.student[0].password)
+        rp.fillInPasswordConfirmationTextBox(this.d.student[0].confirmpassword)
         rp.clickOnAgreeCheckBox()
         rp.clickOnSubmitBtn()
     })
@@ -44,16 +43,16 @@ describe('Register as Student Suite', function() {
         const rp = new RegisterPage()
         rp.visit()
         rp.clickOnNewRegistrationBtn()
-        cy.title().should('be.equal', 'منـصــة تعليمى')
+        cy.title().should('be.equal', this.d.title)
         rp.clickOnStudentBtn()
         // Using second JSON element on "student" to run invalid test
-        rp.fillInFirstNameTextBox(this.student.student[1].firstname)
-        rp.fillInLastNameTextBox(this.student.student[1].lastname)
-        rp.fillInMobileNumberTextBox(this.student.student[1].mobilenumber)
-        rp.clickOnGenderBtn(this.student.student[1].gender)
+        rp.fillInFirstNameTextBox(this.d.student[1].firstname)
+        rp.fillInLastNameTextBox(this.d.student[1].lastname)
+        rp.fillInMobileNumberTextBox(this.d.student[1].mobilenumber)
+        rp.clickOnGenderBtn(this.d.student[1].gender)
         rp.selectLevelDropDownList()
-        rp.fillInPasswordTextBox(this.student.student[1].password)
-        rp.fillInPasswordConfirmationTextBox(this.student.student[1].confirmpassword)
+        rp.fillInPasswordTextBox(this.d.student[1].password)
+        rp.fillInPasswordConfirmationTextBox(this.d.student[1].confirmpassword)
         rp.clickOnAgreeCheckBox()
         rp.clickOnSubmitBtn()
     })
